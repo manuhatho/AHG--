@@ -767,6 +767,9 @@ padding-bottom: 600px;
 
 footer .footerContent .firstbox, .sndbox, .partenaire {
   margin-bottom: 50px;
+  padding-bottom: 90px;
+  height: 0;
+  margin-top: 250px;
  
   
 }
@@ -1357,6 +1360,15 @@ margin-top: 500px;
 
 /* xm */
 @media (min-width:475px){}
+
+
+@media (min-width:300px){
+  footer .social{
+    position: relative;
+    top: 0;
+   
+  }
+}
 
 /* xm  */
 
