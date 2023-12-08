@@ -1028,8 +1028,16 @@ footer .menuContent p:hover {
 }
 
 
- @media (max-width: 698px) {
- 
+ @media (max-width: 672px) {
+
+  section .rightbox img{
+    height: 300px;
+  }
+  section .rightbox #next, #previous{
+    top: 100px !important;
+    height: 60px !important;
+    
+  }
   
 } 
 @media (max-width: 650px) {
