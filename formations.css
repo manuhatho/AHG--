@@ -309,8 +309,9 @@ header.active{
 
   .section-1 #bar {
     position: absolute;
-    height: 14px;
+    height: 25px;
     bottom: -15px;
+    
   }
 
  
