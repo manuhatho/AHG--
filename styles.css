@@ -1322,19 +1322,19 @@ header nav ul li .end:hover::after {
   footer .social img {
     position: relative;
    right: 280px;
-   bottom: 510px;
+ 
   }
   footer .social .icone .fa-brands {
    display: block;
   }
   footer .social .icone  {
    position : relative;
-   bottom:500px;
+  
    left: 300px;
    scale : 1.5;
   }
   footer .firstbox {
-background-color: red;
+
 height: 0;
 margin-top: 500px;
   }
