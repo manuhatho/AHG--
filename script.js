@@ -7,6 +7,7 @@ const body = document.querySelector("body");
 const scrollcolor = document.querySelectorAll('#scrollColor');
 const barForm = document.querySelector('.form');
 const btnInscription = document.getElementById('inscription');
+const exit = document.getElementById('exit');
 
 const boxInscription = document.querySelector('.boxInscription');
 console.log(boxInscription);
@@ -34,6 +35,10 @@ barForm.addEventListener("click",function(){
     
     boxInscription.classList.remove('active')
     body.classList.remove('active')
+})
+
+exit.addEventListener("click",function(){
+    navMenu.classList.toggle('active');
 })
 
 
