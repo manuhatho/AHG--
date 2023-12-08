@@ -9,6 +9,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 html {
@@ -25,6 +26,7 @@ p {
 }
 
 body {
+  
  width: 100%;
  height: 110vh;
  overflow-x: hidden !important;
@@ -1105,9 +1107,10 @@ header.active{
   scale: 0.9;
  }
 }
-@media (max-width: 696px) {
- 
- 
+@media only screen and (max-width: 600px) {
+  body {
+      margin: 5px;
+  }
 }
 
 @media (max-width:475px){
