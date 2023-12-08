@@ -94,19 +94,14 @@
         </div>
 
         <div class="btn">
-          <a href="./formations.html"><button type="button">Je m'inscris</button></a>
+          <button id="inscription">Je m'inscris</button>
         </div>
       </div>
     </div>
-  
- 
 
-  </div>
-
-    <div class="main">
-
-      
    
+  </div>
+    <div class="main">
 
   <div class="section-2">
     <h1 id="Notre_Vision"><svg id="bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236.82 14.11">
@@ -137,6 +132,7 @@
         <img src="./student.png" alt="">
       </div>
     </div>
+
   </div>
 
   <section>
@@ -629,6 +625,44 @@
   </svg>
 </div>
 
+<div class="boxInscription">
+  <div class="inscription">
+    <div class="form">
+      <div class="close"></div>
+       </div>
+    <form id="inscriptionForm" action="" method="post">
+      
+       
+     <fieldset>
+         <label id="Name" for="name">Noms :
+             <input id="name" name="name" type="text" placeholder="Entrer votre Nom" required>
+         </label>
+         <label id="Prenoms" name="prenoms" for="prenoms">Prénoms :
+             <input id="prenoms" name="prenoms" type="text" placeholder="Entrez votre Prénoms" required>
+         </label>
+         <label id="Tel" name="phoneNumber" for="tel">Téléphone :
+             <input id="tel" type="tel" lenght="9" placeholder="Entrez votre numéro de Téléphone" required>
+         </label>
+     </fieldset>
+ 
+     <fieldset>
+            <label id="Comment" for="comment">Formation:</label>
+          <select id="comment">
+            <option value="">-- Choix de la Formation</option>
+            <option value="1">-Hôtellerie</option>
+            <option value="2">-Restauration</option>
+            <option value="3">-Tourisme</option>
+          </select>
+         </label>
+         <div class="btn">
+             <input id="submit" type="submit" value="S'inscrire">
+         </div>
+     </fieldset>
+    </form>
+    
+ 
+   </div>
+</div>
 
 
 

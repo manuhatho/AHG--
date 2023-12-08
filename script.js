@@ -5,6 +5,11 @@ const navMenu2 = document.querySelector(".nav3");
 const header = document.querySelector("header");
 const body = document.querySelector("body");
 const scrollcolor = document.querySelectorAll('#scrollColor');
+const barForm = document.querySelector('.form');
+const btnInscription = document.getElementById('inscription');
+
+const boxInscription = document.querySelector('.boxInscription');
+console.log(boxInscription);
 
 document.addEventListener("scroll",function(){
     if(window.scrollY > 0){
@@ -21,7 +26,14 @@ barMenu.addEventListener("click",function(){
     body.classList.toggle('active')
 });
 
-
+btnInscription.addEventListener("click",function(){
+    console.log('click');
+    boxInscription.classList.add('active')
+})
+barForm.addEventListener("click",function(){
+    console.log('click');
+    boxInscription.classList.remove('active')
+})
 
 
 

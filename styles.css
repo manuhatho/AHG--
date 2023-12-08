@@ -401,6 +401,186 @@ header.active{
   }
 }
 
+
+/* JE M'INSCRIS-------------------------------------- */
+
+.boxInscription.active{
+  display: block !important;
+  
+}
+.boxInscription{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  /* opacity: 0; */
+  /* transition: fade 0.4s ease; */
+  background-color: rgba(0, 0, 0, 0.816);
+  display: none;
+
+  
+
+}
+
+.inscription{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  height: 800px;
+  position: relative;
+  max-width:800px;
+  scale: 0.9;
+
+}
+
+.inscription form {
+  width: 100%;
+  height: 800px;
+  left: 0;
+  right: 0;
+  max-width: 800px;
+  border-radius: 5px;
+  background-color: rgb(10, 24, 46);
+  padding: 100px;
+  font-family: 'magis';
+  
+ 
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  from{
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.inscription form label{
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+.inscription form input, select{
+    width: 100%;
+    padding: 15px 0;
+    padding-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  .inscription input::placeholder,select::placeholder{
+      color:green;
+      
+  }
+  select {
+    font-family: 'magis';
+    color: #425531;
+    cursor: pointer;
+  }
+  select option {
+    font-family: 'magis';
+    cursor: pointer;
+    
+  }
+
+fieldset {
+  border: none;
+  border-bottom: 2px solid;
+  padding-bottom:30px ;
+  margin-bottom: 30px;
+  color: #f99045;
+}
+fieldset:last-of-type {
+  border: none;
+
+ 
+}
+.inscription .btn{
+  text-align: center;
+  margin-top: 20px;
+}
+.inscription form input[type='submit']{
+  width: auto;
+  margin-top: 30px;
+  padding:15px 50px ;
+  border: none;
+  background-color: #f99045;
+  color: white;
+   transition: 0.25s ease;
+   
+   cursor: pointer;
+}
+
+ input[type='submit']:hover{
+background-color: #425531!important;
+transition: 0.25s ease;
+
+}
+
+
+.form {
+  width: 35px;
+  height: 35px;
+  transition: 0.25 ease;
+  z-index: 98;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  scale: 1.2;
+  
+}
+
+.form .close,
+.form::before,
+.form::after {
+  content: '';
+  display: block;
+  margin-top: 7px;
+  width: 100%;
+  height: 2px;
+  background-color: #f99045;
+
+  transition: 0.25 ease;
+  z-index: 98;
+}
+.form .close,
+.form:hover::before,
+.form:hover::after {
+ 
+  background-color:#425531;
+  transition: 0.25 ease;
+  
+}
+
+.form::before {
+  transform: rotate(45deg) translate(8px, 6px);
+  transition: 0.4s ease;
+}
+
+.form::after {
+  transform: rotate(-45deg) translate(6px, -6px);
+  transition: 0.4s ease;
+}
+
+
+.form .close {
+  opacity: 0;
+ 
+}
+
+
+/* --------------------------------------------------------- */
+
+
+
 .section-2 {
   width: 100%;
   max-width: 90%;
@@ -1069,6 +1249,15 @@ footer .menuContent p:hover {
 @media (max-width:444px){
   .content .img{
     margin-top: 150px;
+  }
+  .inscription form {
+    padding-left: 0 ;
+    padding-right: 0;
+  }
+  
+  .inscription form input[type='submit']{
+ 
+    margin-top: 10px;
   }
 }
 
