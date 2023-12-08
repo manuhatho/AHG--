@@ -1015,7 +1015,7 @@ header.active{
   }
   
   header .first {
-    color:#a55540;
+    color:#f99045;
     border-radius: 5px;
     padding: 10px 40px;
     text-align: center;
@@ -1030,14 +1030,17 @@ header.active{
   
   }
   
-  header nav ul li .first::after {
+  header nav ul li .st{
+    
+  }
+  header nav ul li .st::after {
     content: "";
     background-color: white;
     width: 3px;
     height: 90px;
     position: absolute;
     transform: rotate(90deg);
-    left: 56px;
+    left: 100px;
     top: -10px;
     opacity: 1;
     border-radius: 10px;
@@ -1054,6 +1057,20 @@ header.active{
     transform: rotate(90deg);
     left: 56px;
     top: -10px;
+    border-radius: 10px;
+    transition: 0.25s ease;
+  
+  }
+  header nav ul li .st:hover::after {
+    content: "";
+    background-color: #f99045;
+    transition: 0.25s ease;
+    width: 3px;
+    height: 90px;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 100px;
+    top: -9px;
     border-radius: 10px;
     transition: 0.25s ease;
   

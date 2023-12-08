@@ -895,7 +895,7 @@ header nav ul li .first::after {
   transform: rotate(90deg);
   left: 56px;
   top: -10px;
-  opacity: 1;
+  opacity: 0;
   border-radius: 10px;
   transition: 0.25s ease;
 }
@@ -949,6 +949,9 @@ header nav ul li .snd:hover::after {
 
 }
 
+header nav ul li .end{
+  color: #a55540;
+}
 header nav ul li .end::after {
   content: "";
   background-color: white;
@@ -956,9 +959,9 @@ header nav ul li .end::after {
   height: 40px;
   position: absolute;
   transform: rotate(90deg);
-  left: 51px;
+  left: 61px;
   top: 17px;
-  opacity: 0;
+  opacity: 1;
   border-radius: 10px;
   transition: 0.25s ease;
 }

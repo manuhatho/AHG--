@@ -811,7 +811,7 @@ header nav ul li .first::after {
   transform: rotate(90deg);
   left: 56px;
   top: -10px;
-  opacity: 1;
+  opacity: 0;
   border-radius: 10px;
   transition: 0.25s ease;
 }
@@ -833,22 +833,26 @@ header nav ul li .first:hover::after {
 
 header nav ul li .snd::after {
   content: "";
-  background-color: white;
+  background-color:white;
   width: 3px;
   height: 50px;
   position: absolute;
   transform: rotate(90deg);
-  left: 54px;
+  left: 67px;
   top: 11px;
-  opacity: 0;
+  opacity:1;
   border-radius: 10px;
   transition: 0.25s ease;
+
 }
 
 header nav ul li .snd:hover {
   color: #4f53c6;;
 }
 
+header nav ul li .snd{
+  color: #a55540;
+}
 header nav ul li .snd:hover::after {
   content: "";
   background-color:#f99045;
