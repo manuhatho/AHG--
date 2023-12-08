@@ -8,6 +8,7 @@ const scrollcolor = document.querySelectorAll('#scrollColor');
 const barForm = document.querySelector('.form');
 const btnInscription = document.getElementById('inscription');
 const exit = document.getElementById('exit');
+const logo = document.getElementById("logo");
 
 const boxInscription = document.querySelector('.boxInscription');
 console.log(boxInscription);
@@ -24,7 +25,10 @@ barMenu.addEventListener("click",function(){
     barMenu.classList.toggle('active');
     navMenu.classList.toggle('active');
     navMenu2.classList.toggle('active');
-    body.classList.toggle('active')
+    body.classList.toggle('active');
+    logo.classList.toggle('active');
+    header.classList.toggle('active');
+   
 });
 
 btnInscription.addEventListener("click",function(){

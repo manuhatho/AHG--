@@ -59,6 +59,22 @@ transition: 0.25s ease;
 
 }
 
+header #logo.active {
+  opacity:0;
+  transition: 0.25s ease;
+}
+header #logo {
+ 
+  transition: 0.25s ease;
+}
+
+#header.active{
+  background-color: none;
+  transition: 0.25s;
+
+}
+
+
 header .logo img {
   height: 70px;
 

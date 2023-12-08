@@ -41,6 +41,20 @@ body {
 }
 
 
+header #logo.active {
+  opacity:0;
+  transition: 0.25s ease;
+}
+header #logo {
+ 
+  transition: 0.25s ease;
+}
+
+#header.active{
+  background-color: none;
+  transition: 0.25s;
+
+}
 
 
 header {
@@ -309,7 +323,7 @@ header.active{
 
   .section-1 #bar {
     position: absolute;
-    height: 25px;
+    height: 20px;
     bottom: -15px;
     
   }
