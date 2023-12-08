@@ -4,20 +4,24 @@ const navMenu = document.querySelector(".nav2");
 const navMenu2 = document.querySelector(".nav3");
 const header = document.querySelector("header");
 const body = document.querySelector("body");
+const scrollcolor = document.querySelectorAll('#scrollColor');
+
 document.addEventListener("scroll",function(){
     if(window.scrollY > 0){
         header.classList.add("active");
     } else {
         header.classList.remove("active")
     }
-})
+});
 barMenu.addEventListener("click",function(){
     console.log('click');
     barMenu.classList.toggle('active');
     navMenu.classList.toggle('active');
     navMenu2.classList.toggle('active');
     body.classList.toggle('active')
-})
+});
+
+
 
 
 
