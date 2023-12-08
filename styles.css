@@ -1033,38 +1033,10 @@ header.active{
   .menuContent .one:after {
     left: 60px;
   }
-  /* footer .sndbox .one::after {
-    
-    left: 45px;
-    
-    transition: 0.25s ease; */
-
+ 
 }
 
-/* footer .content1, .content2 {
-margin-left: 100px;
-}
-footer .content1 p, .content2 p {
-width: 100px;
-} */
 
-/* 
-.thirdbox{
-  position: relative;
-  right: 230px;
-  top: 250px;
-}
-.copyright{
-  top: 25px !important;
-
-}
-.partenaire  {
-  display: flex;
-  flex-direction: row !important;
-  width: 60vh !important;
-}
-
-} */
 
 @media (max-width:794px){
 .rightbox{
@@ -1118,23 +1090,12 @@ width: 100px;
   height: 15px;
 
 }
-/* footer .partenaire {
-  display: flex;
-  flex-direction: column;
-}
-footer {
-  min-height: 480px;
-} */
 
-/* @media (max-width: 698px) {
-  .infoContact p{
-    position: relative;
-    bottom: 60px;
-    width: 350px;
-    
-  }
+
+ @media (max-width: 698px) {
+ 
   
-} */
+} 
 @media (max-width: 650px) {
 
 .section-1 .hero .left h1{
@@ -1145,38 +1106,21 @@ footer {
  }
 }
 @media (max-width: 696px) {
-  /* footer .menuContent .content2{
-    margin-right: 45px;
-    margin-top: 20px;
-  } */
-  .content1{
-    margin-top: 20px;
-  }
-  /* footer .menuContent{
-  
-    display: flex;
-    flex-direction: column;
-    
-  }
-  footer .thirdbox{
-    right: 500px;
-  }
-  footer .content2{
-    margin-left:140px ;
-  }
-  footer .content1, .content2 {
-    margin-left: 100px;
-  }
-  footer .infoContact{
-    position: relative;
-    right: 100px;
-  } */
+ 
+ 
 }
 
 @media (max-width:475px){
-  .content .img{
-    margin-top: 100px;
-  }
+ .nav3{
+  display: none;
+
+ }
+ .nav2 {
+  width: 100%;
+ }
+ body.active {
+  overflow-y: hidden;
+ }
 }
 @media (max-width:344px){
   .content .img{
