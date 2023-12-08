@@ -1055,11 +1055,25 @@ footer .menuContent p:hover {
   overflow-y: hidden;
  }
 }
-@media (max-width:344px){
+@media (max-width:444px){
   .content .img{
     margin-top: 150px;
   }
 }
+
+@media (max-width:431px){
+  .section-1 h1 {
+    font-size: 1.8rem !important;
+  }
+  .section-1 p {
+    font-size: 13px !important;
+    line-height: 20px !important;
+    letter-spacing: 8px !important;
+  }
+}
+
+
+
 /* RESPONSIVES MIN-WIDTH */
 
 /* 2x l */
@@ -1068,7 +1082,7 @@ footer .menuContent p:hover {
 /* xl  */
 @media (min-width:1280px){}
 
-/* 2x  */
+/* lg  */
 @media (min-width:1024px){
   .menu{
     display: none;
@@ -1316,12 +1330,17 @@ margin-top: 500px;
   }
 }
 
-/* lg  */
+/* sm  */
 @media (min-width:640px){}
 
-/* sm  */
+/* xm */
 @media (min-width:475px){}
 
 /* xm  */
-@media (min-width:1536px){}
+
+@media (min-width:260px){
+  .content  .img{
+    margin-top: 200px !important;
+  }
+}
 
