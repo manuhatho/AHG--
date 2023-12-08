@@ -27,12 +27,13 @@ barMenu.addEventListener("click",function(){
 });
 
 btnInscription.addEventListener("click",function(){
-    console.log('click');
     boxInscription.classList.add('active')
+    body.classList.toggle('active')
 })
 barForm.addEventListener("click",function(){
-    console.log('click');
+    
     boxInscription.classList.remove('active')
+    body.classList.remove('active')
 })
 
 

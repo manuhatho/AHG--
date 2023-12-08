@@ -443,7 +443,8 @@ header.active{
   max-width: 800px;
   border-radius: 5px;
   background-color: rgb(10, 24, 46);
-  padding: 100px;
+  /* padding: 100px; */
+  padding:55px 70px 0 70px;
   font-family: 'magis';
   
  
@@ -489,6 +490,10 @@ header.active{
     cursor: pointer;
     
   }
+  select option:hover{
+    
+    
+  }
 
 fieldset {
   border: none;
@@ -524,7 +529,9 @@ transition: 0.25s ease;
 
 }
 
-
+body.active{
+  overflow-y: hidden;
+}
 .form {
   width: 35px;
   height: 35px;
@@ -532,9 +539,9 @@ transition: 0.25s ease;
   z-index: 98;
   cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  scale: 1.2;
+  top: 10px;
+  right: 10px;
+  scale: 1.1;
   
 }
 
