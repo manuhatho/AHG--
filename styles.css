@@ -9,11 +9,12 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  overflow-x: hidden;
+
 }
 
 html {
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
   
 }
 
@@ -26,10 +27,16 @@ p {
 }
 
 body {
-  
+ 
  width: 100%;
  height: 110vh;
- overflow-x: hidden !important;
+
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 
