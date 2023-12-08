@@ -39,6 +39,7 @@ barForm.addEventListener("click",function(){
 
 exit.addEventListener("click",function(){
     navMenu.classList.toggle('active');
+    barMenu.classList.toggle('active');
 })
 
 
