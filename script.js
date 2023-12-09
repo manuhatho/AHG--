@@ -55,6 +55,7 @@ exit.addEventListener("click",function(){
     navMenu.classList.toggle('active');
     navMenu2.classList.toggle('active');
     barMenu.classList.toggle('active');
+    body.classList.remove('active');
 })
 
 
