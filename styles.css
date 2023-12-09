@@ -1676,6 +1676,9 @@ footer .menuContent p:hover {
       transition: 0.25s ease;
     }
 
+    header nav ul li .snd{
+      cursor: pointer;
+    }
     header nav ul li .snd:hover {
       color: #4f53c6;
       ;

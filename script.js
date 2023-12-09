@@ -53,6 +53,7 @@ exit.addEventListener("click",function(){
     navMenu2.classList.toggle('active');
     barMenu.classList.toggle('active');
     body.classList.remove('active');
+    true();
 })
 
 
