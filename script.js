@@ -26,16 +26,13 @@ document.addEventListener("scroll",function(){
     }
 });
 barMenu.addEventListener("click",function(){
-    console.log('click');
     barMenu.classList.toggle('active');
     navMenu.classList.toggle('active');
     navMenu2.classList.toggle('active');
     body.classList.toggle('active');
     logo.classList.toggle('active');
     // headerSc.classList.toggle('active')
-    
-    
-   
+ 
 });
 
 btnInscription.addEventListener("click",function(){
