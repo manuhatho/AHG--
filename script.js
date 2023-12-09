@@ -39,7 +39,8 @@ barMenu.addEventListener("click",function(){
 });
 
 btnInscription.addEventListener("click",function(){
-    boxInscription.classList.add('active')
+    boxInscription.classList.toggle('active');
+    form.classList.add('active');
     body.classList.toggle('active')
 })
 barForm.addEventListener("click",function(){
