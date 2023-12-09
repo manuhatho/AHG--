@@ -3,7 +3,7 @@ const barMenu = document.querySelector(".menu");
 const navMenu = document.querySelector(".nav2");
 const navMenu2 = document.querySelector(".nav3");
 const header = document.querySelector("header");
-const headerSc = document.querySelector("header");
+// const headerSc = document.querySelector("header");
 const body = document.querySelector("body");
 const scrollcolor = document.querySelectorAll('#scrollColor');
 const barForm = document.querySelector('.form');
@@ -32,7 +32,7 @@ barMenu.addEventListener("click",function(){
     navMenu2.classList.toggle('active');
     body.classList.toggle('active');
     logo.classList.toggle('active');
-    headerSc.classList.toggle('active')
+    // headerSc.classList.toggle('active')
     
     
    
@@ -53,6 +53,7 @@ barForm.addEventListener("click",function(){
 
 exit.addEventListener("click",function(){
     navMenu.classList.toggle('active');
+    navMenu2.classList.toggle('active');
     barMenu.classList.toggle('active');
 })
 
