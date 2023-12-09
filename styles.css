@@ -1295,10 +1295,7 @@ footer .menuContent p:hover {
     transition: 0.25s ease;
   }
 
-  .section-1 .hero .left h1,
-  p {
-    text-align: center !important;
-  }
+ 
 
   .menuContent .one:after {
     left: 60px;
