@@ -281,6 +281,7 @@ header.active {
   bottom: 0;
   width: 100%;
   height: 100px;
+  /* height: 100px; */
   background-color: #fff;
   clip-path: polygon(100% 30%, 0% 100%, 100% 100%);
 
@@ -293,8 +294,9 @@ header.active {
   left: 0;
   right: 0;
   background-color: rgba(10, 24, 46, 0.498);
+  
 
-}
+} 
 
 .overlay::before {
   content: '';
@@ -305,7 +307,7 @@ header.active {
   height: 100px;
   background-color: #fff;
   clip-path: polygon(100% 30%, 0% 100%, 100% 100%);
-}
+} 
 
 .section-1 .hero {
   position: relative;
@@ -919,41 +921,29 @@ section .rightbox img {
   content: "";
   position: absolute;
   width: 100%;
-  top: -50px;
+  top: 0;
   left: 0;
-  height: 50px;
-  background-color: #f99045;
-  clip-path: ellipse(50% 100% at 50% 100%);
+  height: 100px;
+  background-color: #fff;
+  /* clip-path: ellipse(50% 100% at 50% 100%); */
 
 
 }
 
 
-.section-3 h1 {
+.main .section-3 h1 {
   font-size: 3rem;
   color: #0f102f;
-  width: fit-content;
   text-align: center;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  position: relative !important;
+ 
 }
 
 
 
-.section-3 .bar2 {
-  fill: white;
-}
 
-.section-3 .bar3 {
-  fill: #ffffff;
-
-}
 
 .section-3 .condition {
-  margin-top: 70px;
+  padding: 20px  0;
   font-size: 19px;
   display: flex;
   flex-direction: column;
@@ -978,6 +968,7 @@ section .rightbox img {
 
 .section-3 .condition p {
   margin-left: 30px;
+  width: 100%;
   user-select: none;
   color: white;
 
