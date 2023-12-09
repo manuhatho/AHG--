@@ -429,19 +429,18 @@ header.active {
 
 /* JE M'INSCRIS-------------------------------------- */
 
-.boxInscription.actives {
+/* .boxInscription.actives {
   opacity: 0;
   height: 0 !important;
   width: 0 !important;
   transition: 0.4s ease;
 
-}
+} */
 
 .boxInscription.active {
   opacity: 1;
-  height: 100% !important;
-  width: initial !important;
   transition: 0.4s ease;
+  z-index: 99;
 
 }
 
@@ -455,8 +454,9 @@ header.active {
   opacity: 0;
   /* animation: fade 1s ease; */
   background-color: rgba(0, 0, 0, 0.816);
-  height: 0;
-  width: 0;
+  
+ opacity: 0;
+ z-index: -1;
   /* display: none; */
 
 
@@ -466,11 +466,16 @@ header.active {
 .inscription {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  height: 800px;
+  max-height: 800px;
   position: relative;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
   max-width: 800px;
   scale: 0.9;
+  
+
 
 }
 
@@ -496,9 +501,11 @@ header.active {
   left: 0;
   right: 0;
   top: 0;
+  margin: 0 auto;
   max-width: 800px;
   border-radius: 15px;
   background-color: rgb(3, 12, 25);
+
   padding: 55px 70px 20px 70px;
   font-family: 'magis';
   opacity: 0;
@@ -546,9 +553,6 @@ select::placeholder {
   color: #425531;
 
 }
-option:where(select) {
-  font-family: 'magis';
-  }
 
 select {
   font-family: 'magis';
@@ -556,7 +560,7 @@ select {
   cursor: pointer;
 }
 
-select option{
+select option {
   font-family: 'magis';
   cursor: pointer;
 
@@ -999,108 +1003,124 @@ section .rightbox img {
 }
 
 
-
 footer {
   width: 100%;
-  min-height: 100vh;
-  margin: auto 0;
+  font-family: "magis";
+  position: relative;
   background: url(./background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgba(10, 24, 46, 0.863);
+  background-color: rgb(10, 24, 46);
   background-blend-mode: multiply;
   color: white;
-  padding-bottom: 30px;
-  font-family: "magis";
-  position: relative;
+  font-size: 17px;
+  
+  
 
 }
 
-footer .footerBackground {
+footer::after{
+  content: "";
   position: absolute;
-  background-color: rgba(10, 24, 46, 0.498);
+  top: 0;
   height: 100%;
   width: 100%;
-  /* padding-bottom: 600px; */
+  background-color: rgba(10, 24, 46, 0.545);
 }
 
 
-footer .footerContent {
-  width: 100%;
-  max-width: 90%;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 600px;
-}
-
-footer .footerContent .firstbox,
-.sndbox,
-.partenaire {
-  margin-bottom: 50px;
-  padding-bottom: 90px;
-  height: 0;
-  margin-top: 250px;
-
-
-}
-
-footer .partenaire {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-footer .footerContent .partenaire img {
-  display: block;
-  margin-top: 40px;
-  height: 45px;
-
-
-
-}
-
-footer .social .fa-brands {
-  margin-right: 10px;
-  margin-bottom: 10px;
-
-}
-
-footer .social {
-  margin-top: 410px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 200px;
-
-}
 
 footer .social img {
 
   height: 90px;
-  margin-right: 200px;
+
 }
 
-footer .menuContent {
+footer .footerContent{
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
   position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 
+}
+.box {
+  padding: 10px 30px;
+}
+footer .top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.icone .fa-brands {
+  scale: 2;
+  color: #f99045;
+  margin: 0 15px;
+  padding: 15px 0;
+}
+footer .bottom {
+  margin-top: 30px;
+}
+
+.firstbox .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sndbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  
+}
+footer h3 {
+  color: white;
+  margin-bottom: 15px;
+  position: relative;
+ 
+
+}
+footer h3:hover {
+  color: #f99045;
+  transition: 0.25s ease;
+
+}
+footer h3::before{
+  content: '';
+  width: 30px;
+  height: 2px;
+  bottom: -4px;
+  display: block;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  transition: 0.25s ease;
+  
+}
+footer h3:hover::before{
+  content: '';
+  width: 40px;
+  transition: 0.25s ease;
+ 
+  
 }
 
 footer .infoContact {
-  margin-top: 30px;
   color: #a55540;
 }
 
-.fa-brands {
+.fa-brands{
   color: #f99045;
 }
 
@@ -1109,25 +1129,50 @@ footer .menuContent p {
   color: white;
   transition: 0.25s ease;
 }
-
 footer .menuContent p:hover {
-  color: #f99045;
+  color:#f99045;
   transition: 0.25s ease;
 
 }
 
 
 
+.content1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.infoContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partenaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
-
-
-
-
-
-
+.img-partenaire{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partenaire img {
+  margin: 0 15px;
+  height: 50px;
+ 
+}
 
 
 
@@ -1351,13 +1396,29 @@ footer .menuContent p:hover {
 }
 
 @media (max-width: 650px) {
-
+  
   .section-1 .hero .left h1 {
     font-size: 2.5rem;
   }
-
+  
   .section-1 .hero .right {
     scale: 0.9;
+  }
+}
+@media (max-width: 518px) {
+  .sndbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: inherit;
+    
+  }
+  .img-partenaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1662,7 +1723,7 @@ footer .menuContent p:hover {
 
   /* md  */
   @media (min-width:768px) {
-    footer .social img {
+    /* footer .social img {
       position: relative;
       right: 280px;
 
@@ -1701,7 +1762,7 @@ footer .menuContent p:hover {
 
     .partenaire img {
       margin: 0 20px;
-    }
+    } */
   }
 
   /* sm  */
@@ -1712,11 +1773,11 @@ footer .menuContent p:hover {
 
 
   @media (min-width:300px) {
-    footer .social {
+    /* footer .social {
       position: relative;
       top: 0;
 
-    }
+    } */
   }
 
   /* xm  */
