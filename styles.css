@@ -546,6 +546,9 @@ select::placeholder {
   color: #425531;
 
 }
+option:where(select) {
+  font-family: 'magis';
+  }
 
 select {
   font-family: 'magis';
@@ -553,7 +556,7 @@ select {
   cursor: pointer;
 }
 
-select option {
+select option{
   font-family: 'magis';
   cursor: pointer;
 
