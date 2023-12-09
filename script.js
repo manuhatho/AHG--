@@ -10,6 +10,7 @@ const barForm = document.querySelector('.form');
 const btnInscription = document.getElementById('inscription');
 const exit = document.getElementById('exit');
 const logo = document.getElementById("logo");
+const form = document.getElementById ('inscriptionForm');
 
 const boxInscription = document.querySelector('.boxInscription');
 console.log(boxInscription);
@@ -42,9 +43,11 @@ btnInscription.addEventListener("click",function(){
     body.classList.toggle('active')
 })
 barForm.addEventListener("click",function(){
-    
-    boxInscription.classList.remove('active')
-    body.classList.remove('active')
+
+    boxInscription.classList.remove('active');
+    form.classList.add('actives');
+    body.classList.remove('active');
+   
 })
 
 exit.addEventListener("click",function(){

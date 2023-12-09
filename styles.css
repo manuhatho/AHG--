@@ -421,8 +421,18 @@ header.active{
 
 /* JE M'INSCRIS-------------------------------------- */
 
+.boxInscription.actives{
+  opacity: 0;
+  height: 0;
+  width:0;
+  transition: 0.4s ease;
+  
+}
 .boxInscription.active{
-  display: block !important;
+  opacity: 1;
+  height: initial;
+  width:initial;
+  transition: 0.4s ease;
   
 }
 .boxInscription{
@@ -432,10 +442,12 @@ header.active{
   right: 0;
   left: 0;
   z-index: 99;
-  /* opacity: 0; */
-  /* transition: fade 0.4s ease; */
+ opacity: 0;
+  animation: fade 1s ease;
   background-color: rgba(0, 0, 0, 0.816);
-  display: none;
+  height: 0;
+  width: 0;
+  /* display: none; */
 
   
 
@@ -452,6 +464,20 @@ header.active{
 
 }
 
+.inscription form.actives{
+  opacity: 0;
+  width: none;
+  height: none;
+  animation: fade 0.4s ease;
+}
+
+.inscription form.active{
+  opacity: 1;
+  height: initial;
+  width: initial;
+  transition: 0.4s ease;
+  animation: fade 1s ease;
+}
 .inscription form {
   width: 100%;
   height: 800px;
@@ -463,7 +489,10 @@ header.active{
   /* padding: 100px; */
   padding:55px 70px 0 70px;
   font-family: 'magis';
-  
+ 
+  animation: fade 1s ease;
+  height: none;
+  width: none;
  
 }
 
@@ -584,11 +613,19 @@ body.active{
   
 }
 
+.form.active::before {
+  transform: rotate(90deg) translate(8px, 6px);
+  transition: 0.4s ease;
+}
 .form::before {
   transform: rotate(45deg) translate(8px, 6px);
   transition: 0.4s ease;
 }
 
+.form.active::after {
+  transform: rotate(-90deg) translate(6px, -6px);
+  transition: 0.4s ease;
+}
 .form::after {
   transform: rotate(-45deg) translate(6px, -6px);
   transition: 0.4s ease;
