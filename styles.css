@@ -901,38 +901,37 @@ section .rightbox img {
 
 .section-3 {
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 100px; */
-  background-color: #f99045;
-  /* clip-path: ellipse(50% 100% at 50% 100%); */
+  background-color:#f99045;
   padding: 50px 0;
   position: relative;
   padding: 30px;
   font-family: 'magis';
+  margin-top:500px ;
+  z-index: 1;
 }
 
+
+
+.section-3 #weave {
+  
+  position: absolute;
+  left: 0;
+  bottom: 338px;
+  z-index: -1;
+}
 .section-3 #select {
   height: 40px;
 }
 
-.section-3::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 100px;
-  background-color: #fff;
-  /* clip-path: ellipse(50% 100% at 50% 100%); */
 
-
-}
 
 
 .main .section-3 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #0f102f;
   text-align: center;
  
@@ -1396,6 +1395,15 @@ footer .menuContent p:hover {
     scale: 0.9;
   }
 }
+@media (max-width: 536px) {
+  
+  .section-3 #weave {
+    position: absolute;
+    bottom: 375px;
+    z-index: -1;
+  }
+}
+
 @media (max-width: 518px) {
   .sndbox {
     display: flex;
@@ -1451,7 +1459,14 @@ footer .menuContent p:hover {
       letter-spacing: 8px !important;
     }
   }
-
+  @media (max-width: 362px) {
+  
+    .section-3 #weave {
+      position: absolute;
+      bottom: 412px;
+      z-index: -1;
+    }
+  }
  
 
   @media (max-width:336px) {
@@ -1480,6 +1495,14 @@ footer .menuContent p:hover {
 
     }
 
+  }
+  @media (max-width: 268px) {
+  
+    .section-3 #weave {
+      position: absolute;
+      bottom: 416px;
+      z-index: -1;
+    }
   }
 
 
