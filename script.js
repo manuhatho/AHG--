@@ -9,7 +9,7 @@ const scrollcolor = document.querySelectorAll('#scrollColor');
 const barForm = document.querySelector('.form');
 const btnInscription = document.getElementById('inscription');
 const exit = document.getElementById('exit');
-const logo = document.getElementById("logo");
+// const logo = document.getElementById("logo");
 const form = document.getElementById ('inscriptionForm');
 
 const boxInscription = document.querySelector('.boxInscription');
@@ -30,7 +30,7 @@ barMenu.addEventListener("click",function(){
     navMenu.classList.toggle('active');
     navMenu2.classList.toggle('active');
     body.classList.toggle('active');
-    logo.classList.toggle('active');
+    // logo.classList.toggle('active');
     // headerSc.classList.toggle('active')
  
 });
