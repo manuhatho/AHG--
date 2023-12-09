@@ -498,9 +498,7 @@ header.active {
   top: 0;
   max-width: 800px;
   border-radius: 15px;
- 
   background-color: rgb(3, 12, 25);
-  /* padding: 100px; */
   padding: 55px 70px 20px 70px;
   font-family: 'magis';
   opacity: 0;

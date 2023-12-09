@@ -1048,7 +1048,7 @@ footer .menuContent p:hover {
   }
   
   header nav ul li .st{
-    
+    color:#a55540;
   }
   header nav ul li .st::after {
     content: "";
