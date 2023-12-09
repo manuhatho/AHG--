@@ -439,7 +439,7 @@ header.active {
 
 .boxInscription.active {
   opacity: 1;
-  height: initial !important;
+  height: 100% !important;
   width: initial !important;
   transition: 0.4s ease;
 
