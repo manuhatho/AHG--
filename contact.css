@@ -416,6 +416,8 @@ header.active{
   .section-2 .content form .btn{
     text-align: center;
     margin-top: 20px;
+    z-index: 97;
+  position: relative;
   }
   .section-2 .content form input[type='submit']{
     width: auto;

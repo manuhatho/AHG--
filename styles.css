@@ -468,7 +468,7 @@ header.active{
   opacity: 0;
   width: none;
   height: none;
-  animation: fade 0.4s ease;
+  animation: fade 1s ease;
 }
 
 .inscription form.active{
@@ -489,8 +489,8 @@ header.active{
   /* padding: 100px; */
   padding:55px 70px 0 70px;
   font-family: 'magis';
- 
-  animation: fade 1s ease;
+ opacity: 0;
+  
   height: none;
   width: none;
  
