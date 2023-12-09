@@ -3,6 +3,7 @@ const barMenu = document.querySelector(".menu");
 const navMenu = document.querySelector(".nav2");
 const navMenu2 = document.querySelector(".nav3");
 const header = document.querySelector("header");
+const headerSc = document.querySelector("header");
 const body = document.querySelector("body");
 const scrollcolor = document.querySelectorAll('#scrollColor');
 const barForm = document.querySelector('.form');
@@ -16,8 +17,11 @@ console.log(boxInscription);
 document.addEventListener("scroll",function(){
     if(window.scrollY > 0){
         header.classList.add("active");
+        header.style.background ="white";
+       
     } else {
         header.classList.remove("active")
+        header.style.background ="none"
     }
 });
 barMenu.addEventListener("click",function(){
@@ -27,7 +31,9 @@ barMenu.addEventListener("click",function(){
     navMenu2.classList.toggle('active');
     body.classList.toggle('active');
     logo.classList.toggle('active');
-    header.classList.toggle('active');
+    headerSc.classList.toggle('active')
+    
+    
    
 });
 

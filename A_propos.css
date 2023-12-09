@@ -67,9 +67,10 @@ header #logo {
   transition: 0.25s ease;
 }
 
-#header.active{
+.header.active{
   background-color: none;
   transition: 0.25s;
+  box-shadow: none;
 
 }
 
