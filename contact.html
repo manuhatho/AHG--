@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="./Normalize.css"> -->
+    <link rel="stylesheet" href="./Normalize.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Academie Hotelière des Grasslands</title>
 </head>
 <body>
@@ -207,7 +208,7 @@
     </div>
     <div class="bottom">
       <div class="copyright">
-        <p>© 2023 Académie Hôtélière des Grasslands</p>
+        <span>© 2023 Académie Hôtélière des Grasslands</span>
       </div>
     </div>
     </div>
@@ -317,6 +318,19 @@ first.addEventListener("mouseout",function(){
     home.classList.remove('black')
 })
       </script>
+
+<script src="./script.js"></script>
+<script>
+  ScrollReveal({
+     
+     distance: '60px',
+     duration: 1200,
+     delay: 400
+      });
+      ScrollReveal().reveal('h1 ', { delay: 500, origin:'top' });
+      ScrollReveal().reveal('.right ', { delay: 500, origin:'right' });
+      ScrollReveal().reveal('p ', { delay: 50, origin:'left' });
+</script>
     <script src="./script.js"></script>
 </body>
 </html>
