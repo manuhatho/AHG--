@@ -418,6 +418,7 @@ header.active{
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: -1;
     font-family: 'magis';
     
    
