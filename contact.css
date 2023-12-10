@@ -394,7 +394,7 @@ header.active{
       border: none;
     }
     .section-2 .content input::placeholder,textarea::placeholder{
-        color:green;
+        color:#425531;
         
     }
     textarea::placeholder{
@@ -407,6 +407,7 @@ header.active{
     padding-bottom:30px ;
     margin-bottom: 30px;
     color: #f99045;
+    margin-top: 30px;
   }
   fieldset:last-of-type {
     border: none;
