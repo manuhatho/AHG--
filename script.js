@@ -35,18 +35,37 @@ barMenu.addEventListener("click",function(){
  
 });
 
-btnInscription.addEventListener("click",function(){
-    boxInscription.classList.toggle('active');
-    form.classList.add('active');
-    body.classList.toggle('active')
-})
-barForm.addEventListener("click",function(){
+// const filter = document.querySelector(".main")
+// btnInscription.addEventListener("click",function(){
+//     boxInscription.classList.toggle('active');
+//     form.classList.add('active');
+//     body.classList.toggle('active')
+//     filter.classList.toggle("active");
+// })
+// barForm.addEventListener("click",function(){
 
-    boxInscription.classList.remove('active');
-    form.classList.add('actives');
-    body.classList.remove('active');
+//     boxInscription.classList.remove('active');
+//     form.classList.add('actives');
+//     body.classList.remove('active');
    
-})
+// })
+
+function inscription(){
+    const toggleAll = document.querySelectorAll("#inscription");
+    const barForm = document.querySelector('.form');
+const btnInscription = document.getElementById('inscription');
+const filter = document.querySelector(".main")
+    console.log(toggleAll);
+    toggleAll.forEach(function(index){
+        index.addEventListener('click',function(){
+            form.classList.toggle('active');
+             filter.classList.toggle("active");
+             boxInscription.classList.toggle('active');
+             
+        })
+    })
+}
+inscription();
 
 exit.addEventListener("click",function(){
     navMenu.classList.toggle('active');

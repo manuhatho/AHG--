@@ -20,6 +20,9 @@ html {
 
 }
 
+.main.active{
+filter: blur(10px);
+}
 .main {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
@@ -459,7 +462,8 @@ header.active {
   left: 0;
   z-index: 99;
   opacity: 0;
-  /* animation: fade 1s ease; */
+  animation: fade 1s ease;
+  transition: 1s ease;
   background-color: rgba(0, 0, 0, 0.816);
   
  opacity: 0;
