@@ -197,9 +197,14 @@ header.active{
   font-size: 19px;
   transform: translateX(300px);
   opacity: 0;
+  overflow-y: scroll;
 
 }
 
+.nav2::-webkit-scrollbar{
+  width:0;
+ 
+}
 .nav2 a {
  
   display: block;

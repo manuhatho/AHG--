@@ -16,13 +16,12 @@
 
 html {
   scroll-behavior: smooth;
-
+  overflow-x: hidden !important;
 
 }
 
 .main {
   overflow-x: hidden !important;
-  overflow-y: scroll !important;
   scroll-behavior: smooth;
 }
 
@@ -201,7 +200,13 @@ header.active {
   font-size: 19px;
   transform: translateX(300px);
   opacity: 0;
+  overflow-y: scroll;
 
+}
+
+.nav2::-webkit-scrollbar{
+  width:0;
+ 
 }
 
 .nav2 a {

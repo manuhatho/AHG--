@@ -15,12 +15,11 @@
 
 html {
   scroll-behavior: smooth;
-
+  overflow-x: hidden !important;
   
 }
 .main {
   overflow-x: hidden !important;
-  overflow-y: scroll !important;
   scroll-behavior: smooth;
 }
 
