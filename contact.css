@@ -360,9 +360,9 @@ header.active{
   }
   
   .section-2 #bar {
-    height: 15px;
+    height: 16px;
     position: absolute;
-    bottom: -3px;
+    bottom: -8px;
   
   }
   .section-2 .content {
